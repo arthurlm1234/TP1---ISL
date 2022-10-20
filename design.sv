@@ -4,7 +4,7 @@ module gray2bin (
 
   wire not_gray3, not_gray2, not_gray1, not_gray0;
   
-  wire aux_b21, aux_b22;
+  wire aux_b21, aux_b22;'
   wire aux_b31, aux_b32, aux_b33, aux_b34;
   wire aux_b41, aux_b42, aux_b43, aux_b44, aux_b45, aux_b46, aux_b47, aux_b48;
   
@@ -21,12 +21,12 @@ module gray2bin (
   and aux_b33(aux_b33, gray[1], gray[2], gray[3]);
   and aux_b34(aux_b34, gray[3], not_gray1, not_gray2);
 
-  and aux_b41(aux_b41, gray[0], not_gray1, not_gray2, not_gray3);
-  and aux_b42(aux_b42, gray[1], not_gray0, not_gray2, not_gray3);
-  and aux_b43(aux_b43, gray[2], not_gray0, not_gray1, not_gray3);
-  and aux_b44(aux_b44, gray[1], gray[2], gray[3], not_gray0);
-  and aux_b45(aux_b45, gray[1], gray[0], gray[3], not_gray2);
-  and aux_b46(aux_b46, gray[2], gray[3], gray[1], not_gray0);
+  and aux_b41(aux_b41, gray[0], not_gray1, not_gray2, not_gray3); 
+  and aux_b42(aux_b42, gray[1], not_gray0, not_gray2, not_gray3); 
+  and aux_b43(aux_b43, gray[2], not_gray0, not_gray1, not_gray3); 
+  and aux_b44(aux_b44, gray[1], gray[2], gray[0], not_gray3); 
+  and aux_b45(aux_b45, gray[2], gray[0], gray[3], not_gray1); 
+  and aux_b46(aux_b46, gray[2], gray[3], gray[1], not_gray0); 
   and aux_b47(aux_b47, gray[3], not_gray1, not_gray2, not_gray0);
   and aux_b48(aux_b48, not_gray2, gray[0], gray[1], gray[3]);
 
