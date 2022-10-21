@@ -4,7 +4,7 @@ module gray2bin (
 
   wire not_gray3, not_gray2, not_gray1, not_gray0;
   
-  wire aux_b21, aux_b22;'
+  wire aux_b21, aux_b22;
   wire aux_b31, aux_b32, aux_b33, aux_b34;
   wire aux_b41, aux_b42, aux_b43, aux_b44, aux_b45, aux_b46, aux_b47, aux_b48;
   
